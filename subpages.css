@@ -1,0 +1,117 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+  font-family: Arrow;
+	src: url("Arrow.ttf")
+}
+
+@font-face {
+  font-family: Cabrion;
+	src: url("Cabrion.otf")
+}
+
+@font-face {
+	font-family: Helvetica;
+	src: url("Helvetica.otf")
+}
+
+
+
+ul {
+	font-family: Cabrion;
+	font: normal;
+	font-size: 24pt;
+	list-style-type: none;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+
+ul li:hover>ul {
+  display: block;
+
+}
+
+ul ul {
+  display: none
+}
+
+.subpage {
+	font-size: 16pt;
+	font: normal;
+	font-family: Arrow;
+	padding: 2px;
+}
+
+.page {
+	font-size: 18pt;
+	font: normal;
+	font-family: Arrow;
+	padding: 8px;
+}
+
+.content {
+	margin: auto;
+	margin-top: inherit;
+	width: 40%;
+	padding: 5px;
+	display: block;
+}
+
+@media screen and max-width 900px 
+	.content {
+		margin: auto;
+		width: 100%;
+		padding: 5px;
+	}
+
+
+a:link {
+  color: black;
+}
+
+
+a:visited {
+  color: darkgreen;
+}
+
+
+a:hover {
+  color: hotpink;
+}
+
+
+a:active {
+  color: blue;
+}
+
+
+
+h1 {
+	font-size: 16pt;
+	font-family: Arrow;
+	padding: 2px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+h2 {
+	font-size: 16pt;
+	font-style:italic;
+	font-family: Cabrion;
+	padding: 2px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+p {
+	font-size: 16pt;
+	font-family: Helvetica;
+	padding: 2px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+
+
