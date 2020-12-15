@@ -113,5 +113,18 @@ p {
 	margin-left: 10px;
 }
 
+figure {
+  padding: 4px;
+  margin: auto;
+}
+
+figcaption {
+	width: 60%;
+  font-style: italic;
+	font-size: 10pt;
+	font-family: Helvetica;
+  padding: 2px;
+  text-align:left;
+}
 
 
