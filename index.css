@@ -1,6 +1,84 @@
 @charset "utf-8";
 /* CSS Document */
 
+.flex-container {
+	display: flex;
+	height: 100vh;
+	align-items: flex-start;
+	background-color: pink;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+
+.flex-container > div {
+  height: inherit;
+	background-color: #f1f1f1;
+  width: 30%;
+  margin: 10px;
+  text-align: left;
+	padding: 10px;
+  line-height: 20px;
+  font-size: 10px;
+	display: flex;
+	word-wrap: normal;
+	overflow-y: scroll;
+	flex-direction: column;
+	vertical-align: top;
+	
+}
+
+
+/*remove scrollbar chrome, safari, edge, ie*/
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+* {
+  -ms-overflow-style: none !important;
+}
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  } 
+}
+
+/*font*/
+h1 {
+	font-size: 14pt;
+	font-family: 'Open Sans';
+	padding: 2px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+h2 {
+	font-size: 16pt;
+	font-style:italic;
+	font-family: 'Open Sans';
+	padding: 2px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+p {
+	font-size: 12pt;
+	font-family: 'Open Sans';
+	padding: 2px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+figcaption {
+	font-size:8pt;
+	font-family: 'Open Sans';
+	width:inherit;
+	line-height: 8pt;
+}
+
+
 @font-face {
   font-family: Arrow;
 	src: url("Arrow.ttf")
@@ -15,100 +93,3 @@
 	font-family: Helvetica;
 	src: url("Helvetica.ttf")
 }
-
-
-
-ul {
-	font-family: Cabrion;
-	font: normal;
-	font-size: 24pt;
-	list-style-type: none;
-	margin-top: 10px;
-	margin-left: 10px;
-}
-
-
-ul li:hover>ul {
-  display: block;
-
-}
-
-ul ul {
-  display: none
-}
-
-.subpage {
-	font-size: 16pt;
-	font: normal;
-	font-family: Arrow;
-	padding: 2px;
-}
-
-.page {
-	font-size: 18pt;
-	font: normal;
-	font-family: Arrow;
-	padding: 8px;
-}
-
-
-a:link {
-  color: black;
-}
-
-
-a:visited {
-  color: darkgreen;
-}
-
-
-a:hover {
-  color: hotpink;
-}
-
-
-a:active {
-  color: blue;
-}
-
-.home {
-	background-image: url("img/mills.jpg");
-	background-width: 90%;
-	background-position: top;
-	background-repeat: no-repeat;
-}
-
-.content {
-	width: 80%;
-	top: 20px;
-	margin-top: 50px;
-	margin-left: 50px;
-}
-
-h1 {
-	font-size: 16pt;
-	font-family: Arrow;
-	padding: 2px;
-	margin-top: 10px;
-	margin-left: 10px;
-}
-
-h2 {
-	font-size: 16pt;
-	font-style:italic;
-	font-family: Cabrion;
-	padding: 2px;
-	margin-top: 10px;
-	margin-left: 10px;
-}
-
-p {
-	font-size: 16pt;
-	font-family: Helvetica;
-	padding: 2px;
-	margin-top: 10px;
-	margin-left: 10px;
-}
-
-
-
